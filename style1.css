@@ -15,19 +15,19 @@
 }
 
 .night{
-    background-image: url('images/night.jpg');
+    background-image: url('night.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .day{
-    background-image: url('images/sunR.jpg');
+    background-image: url('sunR.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .sunset{
-    background-image: url('images/sunS.jpg');
+    background-image: url('sunS.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
