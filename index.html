@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Drag-Drop Task Management Board</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="images/icon.jpg">
+</head>
+<body>
+    <div class="board">
+        <div class="bimg">
+        <img src="images/task.png" alt="Task Image" style="height: 75px; margin-top: 20px;">
+    <img src="images/banner.png" alt="Banner Image" style="height: 100px; margin-top: 20px;">
+</div>
+      <hr>
+        <form id="todo-form">
+            <input type="text" placeholder="Add tasks" id="todo-in"/>
+            <button type="submit"> +Add </button>
+        </form>
+        <div class="columns">
+            <div class="col col2" id="todo-col">
+                <h3 class="heading">TO-DO</h3>
+                <p class="work" draggable="true">Physics rev
+                    <button class="delete-btn">&#10060</button>
+                </p>
+            </div>
+            <div class="col col1" id="backlog-col">
+                <h3 class="heading">PENDING</h3>
+                <p class="work" draggable="true">Linear-maths
+                    <button class="delete-btn">&#10060</button>
+                </p>
+                <p class="work" draggable="true">Eq-physics
+                    <button class="delete-btn">&#10060</button>
+                </p>
+                <p class="work" draggable="true">Term paper
+                    <button class="delete-btn">&#10060</button>
+                </p>
+            </div>
+            <div class="col col3" id="in-process-col">
+                <h3 class="heading">IN-PROCESS</h3>
+                <p class="work" draggable="true">Maths CA
+                    <button class="delete-btn">&#10060</button>
+                </p>
+                
+            </div>
+            <div class="col col4" id="done-col">
+                <h3 class="heading">DONE</h3>
+                <p class="work" draggable="true"> CA-3 HTML <button class="delete-btn">&#10060</button>
+                </p>
+            </div>
+        </div>
+    
+    </div>
+<script src="index1.js"></script> 
+</body>
+</html>
