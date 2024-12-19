@@ -35,7 +35,12 @@ form1.addEventListener("submit", (e) => {
     const newTask1 = document.createElement("p");
     newTask1.classList.add("work");
     newTask1.setAttribute("draggable", "true");
-    newTask1.innerText = val1;
+    const today = new Date();
+    const date = today.getDate(); 
+    const month = today.getMonth() + 1; 
+    const formattedDate = `${date}-${month < 10 ? '0' : ''}${month}`; 
+
+    newTask1.innerText = `${val1} (${formattedDate})`;
     newTask1.style.backgroundColor = 'green';
 
     const deleteButton = document.createElement("button");
